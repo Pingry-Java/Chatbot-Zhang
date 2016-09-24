@@ -31,8 +31,8 @@ public class chatbot
 			System.out.println("How long until you turn " + (++age) + "?");
 			keys.nextLine(); //Lets the user answer, but doesn't store the answer anywhere.
 		}
-		String answer = ""; //Just to enter the loop the first time
-		while (! answer.equals("bye")) // can't use != because that compares references
+		String answer = "bye"; //Just to enter the loop the first time
+		while ((!answer.equals("bye"))&& (!answer.equals("Bye"))); // can't use != because that compares references
 		{
 			System.out.println("Tell me one of your hobbies (or say \"bye\" to exit.");
 			answer = keys.nextLine();
